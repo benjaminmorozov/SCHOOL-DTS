@@ -1,4 +1,4 @@
--- Morozov Benjamín II.A - kniznica script
+-- Morozov Benjamín II.A - kniznica script úloha 2 M:N relácia
 
 -- pre túto session/reláciu chceme používať engine INNODB, ktorý podporuje foreign key
 SET default_storage_engine=INNODB;
@@ -43,7 +43,7 @@ CREATE TABLE `knihy`
 );
 
 -- -----------------------------------------------------
--- Vytvorenie tabuľky knihy_a_vydavatelstva
+-- Vytvorenie tabuľky knihy_a_vydavatelstva - M:N relácia
 -- -----------------------------------------------------
 
 create TABLE `knihy_a_vydavatelstva`
