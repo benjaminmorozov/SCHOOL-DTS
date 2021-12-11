@@ -1,0 +1,4 @@
+SELECT knihy.nazov, knihy.vydavatel_id, knihy.zapozicana_id, vydavatelstva.id_vydavatela, vydavatelstva.meno_vydavatela, zakaznici.id_zakaznika, zakaznici.meno
+FROM knihy 
+LEFT JOIN vydavatelstva ON vydavatelstva.id_vydavatela = vydavatel_id
+LEFT JOIN zakaznici ON zakaznici.id_zakaznika = zapozicana_id;
