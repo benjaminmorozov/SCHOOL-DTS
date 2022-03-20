@@ -94,8 +94,6 @@ CREATE TABLE IF NOT EXISTS `filmy` (
 
 -- -----------------------------------------------------
 -- vytvorenie tabuľky zakaznici 
-,
-,
 -- -----------------------------------------------------
 
 DROP TABLE IF EXISTS `zakaznici`;
