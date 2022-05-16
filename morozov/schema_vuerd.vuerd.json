@@ -1,0 +1,559 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -19,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "vydavatelstva",
+        "comment": "",
+        "columns": [
+          {
+            "id": "ff542704-9ef4-4f2b-99a6-5772a7e2a775",
+            "name": "id_vydavatela",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 81.498046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "d25c8854-471e-4acb-aad6-6937d7533c18",
+            "name": "meno_vydavatela",
+            "comment": "",
+            "dataType": "text",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 103.89892578125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 50,
+          "top": 50,
+          "zIndex": 1,
+          "widthName": 80.76171875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "589ae96d-33ba-4440-b94a-0d035185348f"
+      },
+      {
+        "name": "knihy",
+        "comment": "",
+        "columns": [
+          {
+            "id": "75a24ecd-36b3-4a44-9dba-b0fcd68f6fca",
+            "name": "id_knihy",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "ecc394dd-1cde-417e-bbb7-3985d3b67852",
+            "name": "nazov",
+            "comment": "",
+            "dataType": "varchar(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 75.6962890625,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 555,
+          "top": 50,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "3244968f-7305-43ea-8d2c-3a5305227827"
+      },
+      {
+        "name": "knihy_a_vydavatelstva",
+        "comment": "",
+        "columns": [
+          {
+            "id": "d80bdc3a-17cb-4160-9960-d48585b839b4",
+            "name": "id_knihy",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e7c16a95-6e83-486d-b534-0aa599fb8f78",
+            "name": "vydavatel_id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 74.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1052,
+          "top": 50,
+          "zIndex": 3,
+          "widthName": 132.7998046875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "c4d84152-3aad-4dc6-b512-391cc5fb1bff"
+      },
+      {
+        "name": "zakaznici",
+        "comment": "",
+        "columns": [
+          {
+            "id": "4a5b76c1-5415-437a-95f2-3fa8d7438376",
+            "name": "id_zakaznika",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.15625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "cc708740-3df3-4504-a197-6dd878380deb",
+            "name": "meno",
+            "comment": "",
+            "dataType": "text",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "852d2fa7-add2-4a0e-844c-0447c9688d58",
+            "name": "priezvisko",
+            "comment": "",
+            "dataType": "text",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 50,
+          "top": 226,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "735bd357-cd5a-4701-bcfc-bb77f8684f20"
+      },
+      {
+        "name": "zapozicane",
+        "comment": "",
+        "columns": [
+          {
+            "id": "8ddcb91e-4e86-455d-9b5d-643fcd8cfd6a",
+            "name": "id_knihy",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b0cee4a2-8139-4bdc-b76b-64730bceba16",
+            "name": "nazov",
+            "comment": "",
+            "dataType": "varchar(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 75.6962890625,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "397b0a69-cf58-48e0-9054-a5c234045b57",
+            "name": "zapozicana_id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.1162109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "ed37ac63-1e1f-4e85-b912-99f48ca589e2",
+            "name": "vydavatel_id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 525,
+          "top": 226,
+          "zIndex": 5,
+          "widthName": 67.76806640625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "57cf6020-e46d-445c-8b43-4add43185d52"
+      }
+    ],
+    "indexes": [
+      {
+        "name": "nazov_knihy",
+        "columns": [
+          {
+            "id": "ecc394dd-1cde-417e-bbb7-3985d3b67852",
+            "orderType": "ASC"
+          }
+        ],
+        "unique": false,
+        "id": "38e1d4ee-aa4e-4bfe-8410-f800b1792377",
+        "tableId": "3244968f-7305-43ea-8d2c-3a5305227827"
+      },
+      {
+        "name": "vydavatel",
+        "columns": [
+          {
+            "id": "e7c16a95-6e83-486d-b534-0aa599fb8f78",
+            "orderType": "ASC"
+          }
+        ],
+        "unique": false,
+        "id": "b4f142d6-87e9-4318-b5fe-09c5eab88802",
+        "tableId": "c4d84152-3aad-4dc6-b512-391cc5fb1bff"
+      },
+      {
+        "name": "kniha",
+        "columns": [
+          {
+            "id": "d80bdc3a-17cb-4160-9960-d48585b839b4",
+            "orderType": "ASC"
+          }
+        ],
+        "unique": false,
+        "id": "4a5e9d19-eaca-49f7-8c6b-d8287e0e2136",
+        "tableId": "c4d84152-3aad-4dc6-b512-391cc5fb1bff"
+      },
+      {
+        "name": "zapozicane",
+        "columns": [
+          {
+            "id": "397b0a69-cf58-48e0-9054-a5c234045b57",
+            "orderType": "ASC"
+          }
+        ],
+        "unique": false,
+        "id": "642cd957-bc0d-431b-9024-adc32db758e2",
+        "tableId": "57cf6020-e46d-445c-8b43-4add43185d52"
+      },
+      {
+        "name": "vydavatel1",
+        "columns": [
+          {
+            "id": "ed37ac63-1e1f-4e85-b912-99f48ca589e2",
+            "orderType": "ASC"
+          }
+        ],
+        "unique": false,
+        "id": "88ebfead-dbb7-4d46-a593-c8a1abb22600",
+        "tableId": "57cf6020-e46d-445c-8b43-4add43185d52"
+      },
+      {
+        "name": "nazov_knihy",
+        "columns": [
+          {
+            "id": "b0cee4a2-8139-4bdc-b76b-64730bceba16",
+            "orderType": "ASC"
+          }
+        ],
+        "unique": false,
+        "id": "8f0d095b-fc4a-4c70-a049-0bbe41cd722d",
+        "tableId": "57cf6020-e46d-445c-8b43-4add43185d52"
+      }
+    ]
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "589ae96d-33ba-4440-b94a-0d035185348f",
+          "columnIds": [
+            "ff542704-9ef4-4f2b-99a6-5772a7e2a775"
+          ],
+          "x": 440.89892578125,
+          "y": 105,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "c4d84152-3aad-4dc6-b512-391cc5fb1bff",
+          "columnIds": [
+            "e7c16a95-6e83-486d-b534-0aa599fb8f78"
+          ],
+          "x": 1052,
+          "y": 105,
+          "direction": "left"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "6f784adb-bf49-4e76-ab21-48153f692ec6"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3244968f-7305-43ea-8d2c-3a5305227827",
+          "columnIds": [
+            "75a24ecd-36b3-4a44-9dba-b0fcd68f6fca"
+          ],
+          "x": 736.34814453125,
+          "y": 160,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "57cf6020-e46d-445c-8b43-4add43185d52",
+          "columnIds": [
+            "8ddcb91e-4e86-455d-9b5d-643fcd8cfd6a"
+          ],
+          "x": 718.90625,
+          "y": 226,
+          "direction": "top"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "970e45e2-0b3c-4bed-a7f8-df5c401e825f"
+      }
+    ]
+  }
+}

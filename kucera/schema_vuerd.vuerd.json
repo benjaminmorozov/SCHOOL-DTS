@@ -1,0 +1,525 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -110,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "albumID_songID",
+        "comment": "",
+        "columns": [
+          {
+            "id": "d0f6fb81-a007-466e-a75c-a864db072736",
+            "name": "albumID",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "8caa23e5-453e-4175-ad30-2c28c345b064",
+            "name": "songID",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 50,
+          "top": 50,
+          "zIndex": 1,
+          "widthName": 98.8271484375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "df79e267-e018-4f14-9a13-3cbac823eb16"
+      },
+      {
+        "name": "Authors",
+        "comment": "",
+        "columns": [
+          {
+            "id": "6944b02a-5d64-4c73-a207-3e3be519dd84",
+            "name": "author_id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7e9563b4-e881-4679-afcf-c669ae7dd66d",
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9b3c9c33-195e-4f6f-8e38-b05bd5ef8b06",
+            "name": "surname",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 92.7779,
+          "top": 383.3333,
+          "zIndex": 8,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "0c9d59bd-d4a5-458d-bbc0-d5e488a78cc1"
+      },
+      {
+        "name": "Albums",
+        "comment": "",
+        "columns": [
+          {
+            "id": "bdfe5302-96c8-4364-baea-8b346bde09e1",
+            "name": "album_id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "a4f58af8-1cbb-4042-bc2a-258312122a48",
+            "name": "album_name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.15625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c5021eb8-6358-45de-a3b1-16c3f5a44013",
+            "name": "authorID",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 569.7785,
+          "top": 177.7778,
+          "zIndex": 11,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "3953a46f-7a74-4744-828c-91686c284826"
+      },
+      {
+        "name": "Songs",
+        "comment": "",
+        "columns": [
+          {
+            "id": "291e60a4-9a38-4d29-9924-fc03358a0392",
+            "name": "song_id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e0cfd488-3113-4290-ad4e-e874de01cd59",
+            "name": "Song_name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.10986328125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "bb9c9c7a-9b68-40bb-aee8-47549959b6bc",
+            "name": "albumID",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "2f919cc4-b68c-4935-af4a-e1ef5ac7f58d",
+            "name": "authorID",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1258.9996,
+          "top": 93.3332,
+          "zIndex": 12,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "17fcb3e6-4a14-4201-9413-d5c7eb0bd2a7"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0c9d59bd-d4a5-458d-bbc0-d5e488a78cc1",
+          "columnIds": [
+            "6944b02a-5d64-4c73-a207-3e3be519dd84"
+          ],
+          "x": 444.3784859375,
+          "y": 415.9583,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "3953a46f-7a74-4744-828c-91686c284826",
+          "columnIds": [
+            "c5021eb8-6358-45de-a3b1-16c3f5a44013"
+          ],
+          "x": 569.7785,
+          "y": 210.4028,
+          "direction": "left"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "b08ef140-766e-4bd4-8293-e33394aa0e57"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3953a46f-7a74-4744-828c-91686c284826",
+          "columnIds": [
+            "bdfe5302-96c8-4364-baea-8b346bde09e1"
+          ],
+          "x": 938.5353359375,
+          "y": 243.0278,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "17fcb3e6-4a14-4201-9413-d5c7eb0bd2a7",
+          "columnIds": [
+            "bb9c9c7a-9b68-40bb-aee8-47549959b6bc"
+          ],
+          "x": 1258.9996,
+          "y": 118.49986666666666,
+          "direction": "left"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "4c31ec29-0a11-4232-82d5-9f6ba7fcc262"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0c9d59bd-d4a5-458d-bbc0-d5e488a78cc1",
+          "columnIds": [
+            "6944b02a-5d64-4c73-a207-3e3be519dd84"
+          ],
+          "x": 444.3784859375,
+          "y": 481.2083,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "17fcb3e6-4a14-4201-9413-d5c7eb0bd2a7",
+          "columnIds": [
+            "2f919cc4-b68c-4935-af4a-e1ef5ac7f58d"
+          ],
+          "x": 1258.9996,
+          "y": 219.16653333333335,
+          "direction": "left"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "65386865-822e-4dd4-9acd-107651747dce"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3953a46f-7a74-4744-828c-91686c284826",
+          "columnIds": [
+            "bdfe5302-96c8-4364-baea-8b346bde09e1"
+          ],
+          "x": 569.7785,
+          "y": 275.6528,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "df79e267-e018-4f14-9a13-3cbac823eb16",
+          "columnIds": [
+            "d0f6fb81-a007-466e-a75c-a864db072736"
+          ],
+          "x": 397,
+          "y": 77.5,
+          "direction": "right"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "9b4b0e69-3b9e-4061-9b49-6099aef0c3e8"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "17fcb3e6-4a14-4201-9413-d5c7eb0bd2a7",
+          "columnIds": [
+            "291e60a4-9a38-4d29-9924-fc03358a0392"
+          ],
+          "x": 1258.9996,
+          "y": 168.8332,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "df79e267-e018-4f14-9a13-3cbac823eb16",
+          "columnIds": [
+            "8caa23e5-453e-4175-ad30-2c28c345b064"
+          ],
+          "x": 397,
+          "y": 132.5,
+          "direction": "right"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "46d15a80-183c-4ed1-aec9-06787e5ce88d"
+      }
+    ]
+  }
+}
